@@ -1,0 +1,16 @@
+body {
+  margin: 0px;
+  background-image: url('./freddy-calzone.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+div#content {
+  background-color: white;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0px;
+}

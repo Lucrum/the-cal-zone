@@ -10,13 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/Lucrum/the-cal-zone.git"
   },
-  "author": "",
+  "author": "Lucrum",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Lucrum/the-cal-zone/issues"
   },
   "homepage": "https://github.com/Lucrum/the-cal-zone#readme",
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   }
