@@ -2,6 +2,8 @@
   --primary-color: #ff8671;
   --secondary-color: #d89065;
   --tertiary-color: #fff2bf;
+  font-family: 'DM Serif Display', serif;
+  font-size: large;
 }
 
 header {
@@ -44,8 +46,11 @@ div#content {
   width: clamp(360px, 50%, 1200px);
 }
 
-h1 {
+h1,
+h2,
+h3 {
   margin: 0px;
+  font-family: 'Abril Fatface', serif;
 }
 
 .card {
