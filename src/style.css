@@ -1,14 +1,26 @@
-body {
-  margin: 0px;
-  background-image: url('./freddy-calzone.jpg');
-  background-size: cover;
+header {
+  background-color: whitesmoke;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+body {
+  margin: 0px;
+  background-color: #fe5f55;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#content > h1 {
+  text-align: center;
 }
 
 div#content {
   background-color: white;
   padding: 2rem;
+  width: clamp(600px, 50%, 1200px);
 }
 
 h1 {
