@@ -1,13 +1,34 @@
+:root {
+  --primary-color: #ff8671;
+  --secondary-color: #d89065;
+  --tertiary-color: #fff2bf;
+}
+
 header {
-  background-color: whitesmoke;
+  background-color: var(--tertiary-color);
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 20px;
+}
+
+header > button {
+  width: 100px;
+  height: 50px;
+  background: whitesmoke;
+  border-left: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+button:hover {
+  background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
 }
 
 body {
   margin: 0px;
-  background-color: #fe5f55;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,9 +41,22 @@ div#content > h1 {
 div#content {
   background-color: white;
   padding: 2rem;
-  width: clamp(600px, 50%, 1200px);
+  width: clamp(360px, 50%, 1200px);
 }
 
 h1 {
   margin: 0px;
+}
+
+.card {
+  background-color: var(--tertiary-color);
+  margin-top: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+@media (max-width: 800px) {
+  div#content {
+    width: clamp(360px, 80%);
+  }
 }

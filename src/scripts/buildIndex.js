@@ -7,6 +7,7 @@ function buildIndex(contentDiv) {
 
   // claims
   let claimsDiv = document.createElement('div')
+  claimsDiv.classList.add('card')
   let claims = [
     "WE HAVE THE BEST CALZONES BAR NONE",
     "DON'T BELIEVE US? YOU'LL HAVE TO TRY IT FOR YOURSELF",
@@ -20,6 +21,7 @@ function buildIndex(contentDiv) {
   let hoursTitle = document.createElement('h2')
   hoursTitle.textContent = "Hours"
   hoursDiv.appendChild(hoursTitle)
+  hoursDiv.classList.add('card')
 
   let hours = [
     "Weekdays: 9AM — 10PM",
@@ -33,6 +35,7 @@ function buildIndex(contentDiv) {
   let locationDiv = document.createElement('div')
   let locationTitle = document.createElement('h2')
   let location = document.createElement('p')
+  locationDiv.classList.add('card')
 
   locationTitle.textContent = "Location"
   location.textContent = "57 Castle Point, Hoboken, New Jersey"

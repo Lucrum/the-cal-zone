@@ -1,6 +1,7 @@
 import './style.css'
 import buildIndex from './scripts/buildIndex'
 import buildMenu from './scripts/buildMenu'
+import buildContact from './scripts/buildContact'
 
 let contentDiv = document.querySelector('div#content')
 
@@ -16,9 +17,9 @@ menuButton.addEventListener("click", () => {
   buildMenu(contentDiv)
 })
 
-// contactButton.addEventListener("click", () => {
-//   buildContact(contentDiv)
-// })
+contactButton.addEventListener("click", () => {
+  buildContact(contentDiv)
+})
 
 
 buildIndex(contentDiv)

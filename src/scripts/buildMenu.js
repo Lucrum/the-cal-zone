@@ -117,7 +117,7 @@ function generateFoodSection(title, desc, items, image) {
   let div = document.createElement('div')
   let sectionTitle = document.createElement('h2')
   let picture = document.createElement('img')
-  div.classList.add('menu-food-category')
+  div.classList.add('menu-food-category', 'card')
   sectionTitle.textContent = title
 
   div.append(sectionTitle)
@@ -163,7 +163,7 @@ function generateSection(title, items) {
   let sectionTitle = document.createElement('h2')
   sectionTitle.textContent = title
   sectionDiv.append(sectionTitle)
-  sectionDiv.classList.add('menu-toppings-category')
+  sectionDiv.classList.add('menu-toppings-category', 'card')
 
   for (const item of items) {
     let p = document.createElement('p')
